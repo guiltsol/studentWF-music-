@@ -29,7 +29,8 @@ namespace studentWF
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Form2 newform = new Form2();
+            newform.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,12 +43,14 @@ namespace studentWF
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             button3.Visible = true;
             trackBar1.Visible = true;
-            wmp.URL = "C:/Users/Администратор/source/repos/studentWF/studentWF/songg.mp3";
+            wmp.URL = "C:/Users/Администратор/source/repos/studentWF/studentWF/stud.mp3";
             wmp.controls.play();
             trackBar1.Value = 0;
             wmp.settings.volume = 0;
+            
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
